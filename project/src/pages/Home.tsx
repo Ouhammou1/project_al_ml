@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { Leaf, Loader2 } from 'lucide-react';
 import ImageUploader from '../components/ImageUploader';
 import CameraCapture from '../components/CameraCapture';
+import VideoCapture from '../components/VideoCapture';
 import PlantCard from '../components/PlantCard';
 import SearchBar from '../components/SearchBar';
 import { recognitionService } from '../services/recognitionService';
@@ -50,10 +51,11 @@ const Home: React.FC = () => {
               Identify Medicinal Plants Instantly
             </h1>
             <p className="text-primary-100 text-lg mb-6 animate-slide-up" style={{animationDelay: '0.1s'}}>
-              Upload an image or take a photo to identify medicinal plants and learn about their properties and uses.
+              Upload an image, take a photo, or use video stream to identify medicinal plants and learn about their properties and uses.
             </p>
             <div className="flex flex-wrap gap-3 animate-slide-up" style={{animationDelay: '0.2s'}}>
               <CameraCapture onImageCaptured={handleImageCaptured} />
+              <VideoCapture onFrameCaptured={handleImageCaptured} />
             </div>
           </div>
           <div className="md:w-5/12 mt-8 md:mt-0 flex justify-center animate-slide-up" style={{animationDelay: '0.3s'}}>
