@@ -2,22 +2,23 @@ import { Plant } from '../types';
 
 export const medicinalPlants: Plant[] = [
   {
-    id: 1,
-    name: 'Echinacea',
-    scientificName: 'Echinacea purpurea',
-    description: 'Echinacea is a flowering plant used in traditional herbal medicine. The plant\'s extracts are commonly used to treat or prevent colds, flu, and other infections.',
-    medicinalUses: [
-      'Boost immune system',
-      'Reduce inflammation',
-      'Alleviate pain',
-      'Treat upper respiratory infections'
-    ],
-    warnings: [
-      'May cause allergic reactions in people allergic to plants in the daisy family',
-      'Not recommended for people with autoimmune disorders',
-      'May interact with medications that suppress the immune system'
-    ],
-    imageUrl: 'https://images.pexels.com/photos/5945741/pexels-photo-5945741.jpeg'
+  id: 1,
+  name: 'Peppermint',
+  scientificName: 'Mentha × piperita',
+  description: 'Peppermint is a hybrid mint, a cross between watermint and spearmint. It is commonly used for its soothing effects on the digestive system and its refreshing flavor.',
+  medicinalUses: [
+    'Relieve digestive symptoms such as bloating and indigestion',
+    'Soothe headaches and migraines',
+    'Ease muscle pain',
+    'Improve respiratory function'
+  ],
+  warnings: [
+    'May cause allergic reactions in sensitive individuals',
+    'Can cause heartburn or irritation in some people',
+    'Not recommended for infants or young children due to risk of breathing problems'
+  ],
+
+    imageUrl: '/src/data/images/1.png'
   },
   {
     id: 2,
@@ -35,7 +36,7 @@ export const medicinalPlants: Plant[] = [
       'Oral consumption may cause digestive discomfort',
       'Not recommended for pregnant women or children'
     ],
-    imageUrl: 'https://images.pexels.com/photos/3712343/pexels-photo-3712343.jpeg'
+    imageUrl: '/src/data/images/3.png'
   },
   {
     id: 3,
@@ -53,62 +54,122 @@ export const medicinalPlants: Plant[] = [
       'Can increase drowsiness when combined with sleep medications',
       'May interfere with blood pressure medications'
     ],
-    imageUrl: 'https://images.pexels.com/photos/4197491/pexels-photo-4197491.jpeg'
+    imageUrl: '/src/data/images/12.jpeg'
   },
   {
     id: 4,
-    name: 'Ginger',
-    scientificName: 'Zingiber officinale',
-    description: 'Ginger is a flowering plant whose rhizome (underground stem) is widely used as a spice and folk medicine. It has been used in traditional medicine for thousands of years.',
+    name: 'Fresh Garlic',
+    scientificName: 'Allium sativum',
+    description: 'Fresh garlic is a widely used culinary and medicinal plant known for its strong flavor and numerous health benefits. It has been used for centuries in traditional medicine.',
     medicinalUses: [
-      'Relieve nausea and vomiting',
-      'Reduce inflammation',
-      'Aid digestion',
-      'Relieve cold and flu symptoms'
+      'Support cardiovascular health by lowering blood pressure and cholesterol',
+      'Boost immune system function',
+      'Possess antibacterial and antiviral properties',
+      'Help reduce inflammation'
     ],
     warnings: [
-      'May increase bile production',
-      'Can interact with blood-thinning medications',
-      'May lower blood sugar'
+      'May cause digestive discomfort or bad breath when consumed in large amounts',
+      'Can thin the blood, so caution is advised when taking blood-thinning medications',
+      'May cause allergic reactions in some individuals'
     ],
-    imageUrl: 'https://images.pexels.com/photos/1213493/pexels-photo-1213493.jpeg'
-  },
+    imageUrl: '/src/data/images/6.png'
+  }
+  ,
   {
     id: 5,
-    name: 'Chamomile',
-    scientificName: 'Matricaria chamomilla',
-    description: 'Chamomile is a daisy-like plant commonly used to make herbal tea. It has been used for centuries as a natural remedy for several health conditions.',
+    name: 'Dandelion Root',
+    scientificName: 'Taraxacum officinale',
+    description: 'Dandelion root is a traditional herbal remedy used for its detoxifying properties. It is often used to support liver function and aid digestion.',
     medicinalUses: [
-      'Promote sleep and relaxation',
-      'Reduce inflammation',
-      'Treat digestive issues',
-      'Relieve menstrual pain'
+      'Support liver health and detoxification',
+      'Promote digestion and relieve constipation',
+      'Act as a natural diuretic',
+      'May help regulate blood sugar levels'
     ],
     warnings: [
-      'May cause allergic reactions in people allergic to plants in the daisy family',
-      'Can increase the effects of blood-thinning medications',
-      'May interact with sedative medications'
+      'May cause allergic reactions in people allergic to ragweed or related plants',
+      'Can interact with diuretics, lithium, or diabetes medications',
+      'Not recommended for people with gallbladder or kidney issues without medical supervision'
     ],
-    imageUrl: 'https://images.pexels.com/photos/131915/pexels-photo-131915.jpeg'
-  },
+    imageUrl: '/src/data/images/13.jpeg'
+  }
+  ,
   {
     id: 6,
-    name: 'Peppermint',
-    scientificName: 'Mentha piperita',
-    description: 'Peppermint is an aromatic herb in the mint family. It is a hybrid mint, a cross between watermint and spearmint, and is used in many traditional remedies.',
+    name: 'Aubépine Fruit',
+    scientificName: 'Crataegus monogyna',
+    description: 'Aubépine, or hawthorn berry, is a traditional remedy used for heart-related conditions. It has been used in European herbal medicine for centuries to support cardiovascular health.',
     medicinalUses: [
-      'Relieve digestive symptoms',
-      'Reduce headaches',
-      'Relieve cold and flu symptoms',
-      'Alleviate muscle pain'
+      'Improve heart function and blood circulation',
+      'Help manage mild heart failure and high blood pressure',
+      'Reduce anxiety and nervousness',
+      'Act as an antioxidant to support overall cardiovascular health'
     ],
     warnings: [
-      'May worsen acid reflux or GERD',
-      'Can interact with certain medications',
-      'May cause skin irritation when applied topically'
+      'May interact with heart medications such as beta-blockers or digitalis',
+      'Can cause dizziness or low blood pressure in some individuals',
+      'Not recommended for use without medical advice if you have a heart condition'
     ],
-    imageUrl: 'https://images.pexels.com/photos/6165976/pexels-photo-6165976.jpeg'
+    imageUrl: '/src/data/images/18.jpeg'
+  },
+  {
+    id: 7,
+    name: 'Amla',
+    scientificName: 'Phyllanthus emblica',
+    description: 'Amla, or Indian gooseberry, is a nutrient-rich fruit used extensively in Ayurvedic medicine. It is known for its high vitamin C content and powerful antioxidant properties.',
+    medicinalUses: [
+      'Boost immune system function',
+      'Promote healthy skin and hair',
+      'Support liver and digestive health',
+      'Help regulate blood sugar and cholesterol levels'
+    ],
+    warnings: [
+      'May lower blood sugar, so caution is advised for people with diabetes',
+      'Can cause dryness or irritation in some individuals if consumed in excess',
+      'May interact with blood-thinning medications'
+    ],
+    imageUrl: '/src/data/images/19.jpeg'
+  },
+  {
+    id: 8,
+    name: 'Chili Pepper',
+    scientificName: 'Capsicum annuum',
+    description: 'Chili peppers are fruits of plants from the Capsicum genus, widely used for culinary and medicinal purposes. Their active compound, capsaicin, has strong anti-inflammatory and pain-relieving properties.',
+    medicinalUses: [
+      'Relieve pain through topical application of capsaicin',
+      'Boost metabolism and aid in weight loss',
+      'Support cardiovascular health',
+      'Improve digestion and reduce appetite'
+    ],
+    warnings: [
+      'May cause irritation or burning sensation in mouth and stomach',
+      'Can aggravate heartburn or ulcers in sensitive individuals',
+      'Avoid contact with eyes and mucous membranes'
+    ],
+    imageUrl: '/src/data/images/20.jpeg'
+  },
+  {
+    id: 9,
+    name: 'Henna',
+    scientificName: 'Lawsonia inermis',
+    description: 'Henna is a flowering plant used for its natural dye properties. The leaves are commonly ground into powder and used to dye hair, skin, and nails, and also have medicinal uses.',
+    medicinalUses: [
+      'Used to treat skin conditions like eczema and fungal infections',
+      'Helps reduce headaches when applied topically',
+      'Promotes hair health and prevents hair loss',
+      'Has cooling properties that can reduce fever'
+    ],
+    warnings: [
+      'May cause allergic reactions in some individuals',
+      'Should be used with caution on sensitive skin or if allergic to plants in the Lythraceae family',
+      'Not recommended for internal use'
+    ],
+    imageUrl: '/src/data/images/24.jpeg'
   }
+  
+  
+  
+  
 ];
 
 export const getPlantById = (id: number): Plant | undefined => {
